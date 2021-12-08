@@ -1,0 +1,7 @@
+PUT http://localhost:3001/api/posts/5f90d9a61ec7c231b0897783
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IkJvYmFsb29iYSIsImlhdCI6MTYwMzU2MjM0M30.6NdPmv4lr0uS_letsHMdwCAODxGBVJDl66M4
+
+{
+    "likes": "Happy"
+}

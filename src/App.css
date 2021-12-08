@@ -1,0 +1,389 @@
+
+*{
+  outline:none!important;
+  max-width:100%
+}
+
+@media screen and (min-width: 1280px){
+  #siteWrapper .container {
+      width: 1280px;
+  }
+}
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+#siteWrapper .row{
+  margin:0;
+  width:100%
+}
+#siteWrapper .row .row{
+ margin:0;
+}
+#siteWrapper .row .row > *{
+  padding:0;
+}
+
+.w-33{
+  width:33%;
+}
+
+h2{
+  margin-bottom: 1rem!important;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+#siteWrapper{
+  color: #333333;
+  background-color: #EFF3FB;
+  min-height:100vh
+}
+
+.topHeader-wrapper{
+  position:fixed;
+  z-index:99
+}
+
+#topHeader {
+  background: #001b50;
+  color:white;
+  border-bottom: 5px solid #001b50;
+  border-top: 5px solid #001b50;
+}
+
+#topHeader p{
+  margin:0;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.loginLink {
+  color:white;
+}
+
+nav .nav-item{
+ margin-left:10px;
+}
+
+nav .nav-item a{
+  color:white;
+  border-bottom:2px solid #001b50;
+}
+
+nav .nav-item a:hover{
+  border-bottom:2px solid white;
+}
+
+#mobileNav{
+  width:100%;
+  border-top: 2px solid;
+  margin-top: 5px;
+}
+
+#mobileNav ul{
+  display:flex;
+  margin:0;
+  justify-content: space-evenly;  
+
+}
+
+.loginPane{
+  height:100vh;
+}
+.postFormContainer{
+    border: 2px solid #001b50;
+    padding: 20px;
+    background: #001b50;
+    margin-bottom:20px;
+}
+
+.postFormContainer > *{
+  color:white;
+}
+
+.postContent{
+  min-height:100px;
+}
+
+#siteWrapper .toast{
+  max-width:100%;
+  margin-bottom: .75rem;
+}
+#siteWrapper  .toast.user{
+  max-width: 204px;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+#siteWrapper  .toast.user:nth-child(5n+1){
+  margin-left:0;
+}
+#siteWrapper  .toast.user:nth-child(5n+5){
+  margin-right:0;
+}
+#siteWrapper .homeUsers  .toast.user{
+  max-width: 100%!important;
+  margin-left: 0!important;
+  margin-right: 0!important;
+}
+
+
+.toast-header{
+  justify-content: space-between;
+}
+
+.toast .toast-header:last-child{
+  border-top:1px solid rgba(0,0,0,.05);
+  border-bottom:0;
+}
+
+.toast-body a{
+  text-decoration: none!important;
+}
+.toast.user .toast-body{
+  padding:0;
+}
+.toast-body a button{
+  background:none;
+  border:none;
+  padding:0
+}
+
+.toast-body a button span{
+  color:red;
+  font-weight:bold;
+}
+
+.toast *{
+  color:black;
+}
+
+.toast div, .toast p, .toast span, .toast strong{
+  font-size:16px;
+}
+
+.toast .btn span{
+  color:white;
+}
+
+.toast .close span{
+  font-size:30px;
+}
+
+#commentText{
+  height: 65px;
+}
+
+#commentSubmit{
+  color:white;
+}
+
+button.tag {
+  margin: 5px;
+}
+
+.postProfileImage{
+  width:45px;
+  height:auto;
+  border:1px solid rgba(0,0,0,.05);
+  border-radius:100%;
+  margin-right:10px;
+}
+
+footer{
+  position:fixed;
+  bottom:0;
+  z-index:99;
+}
+
+footer .footer-below {
+  background-color: #001b50;
+  text-align:center;
+}
+
+footer .footer-below * {
+  color: white;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Tab css */
+
+
+#tab-button {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#tab-button li {
+  display: table-cell;
+  width: 20%;
+}
+#tab-button li a {
+  display: block;
+  padding: .5em;
+  background: #eee;
+  border: 1px solid #ddd;
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+}
+#tab-button li:not(:first-child) a {
+  border-left: none;
+}
+#tab-button li a:hover,
+#tab-button .is-active a {
+  border-bottom-color: transparent;
+  background: #fff;
+}
+
+.tab-button-outer {
+  display: none;
+}
+
+.pagination{
+  justify-content: center;
+}
+
+@media screen and (max-width: 1199px) {
+  #siteWrapper  .toast.user{
+    max-width: 214px;
+  }
+  
+  #siteWrapper  .toast.user:nth-child(5n+1){
+    margin-left:7px;
+  }
+  #siteWrapper  .toast.user:nth-child(5n+5){
+    margin-right:7px;
+  }
+
+  #siteWrapper  .toast.user:nth-child(4n+1){
+    margin-left:0;
+  }
+  #siteWrapper  .toast.user:nth-child(4n+4){
+    margin-right:0;
+  }
+}
+
+
+@media screen and (max-width: 991px) {
+
+  #siteWrapper  .toast.user{
+    max-width: 210px;
+  }
+
+  #siteWrapper  .toast.user:nth-child(4n+1){
+    margin-left:7px;
+  }
+  #siteWrapper  .toast.user:nth-child(4n+4){
+    margin-right:7px;
+  }
+  #siteWrapper  .toast.user:nth-child(3n+1){
+    margin-left:0;
+  }
+  #siteWrapper  .toast.user:nth-child(3n+3){
+    margin-right:0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .tab-button-outer {
+    position: relative;
+    z-index: 2;
+    display: block;
+  }
+  .tab-select-outer {
+    display: none;
+  }
+  #siteWrapper  .toast.user{
+    max-width: 233px;
+  }
+
+  
+
+  #siteWrapper  .toast.user:nth-child(3n+1){
+    margin-left:7px;
+  }
+  #siteWrapper  .toast.user:nth-child(3n+3){
+    margin-right:7px;
+  }
+  #siteWrapper  .toast.user:nth-child(2n+1){
+    margin-left:0;
+  }
+  #siteWrapper  .toast.user:nth-child(2n+2){
+    margin-right:0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #siteWrapper .toast.user{
+    max-width:100%;
+    width: 100%;
+    margin-left:0!important;
+    margin-right:0!important;
+
+  }
+  
+  #siteWrapper .toast .toastFoot{
+    justify-content:center;
+    flex-direction:column;
+
+  }
+  
+  #siteWrapper .toast .toastFoot em{
+    margin-top:5px;
+    margin-bottom:5px;
+  }
+
+  .topBar{
+    display:flex;
+    width:100%;
+    justify-content:center
+
+  }
+
+  .loginContainer{
+    display:flex;
+    width:100%;
+    justify-content:center
+  }
+
+  .w-33{
+    width: 100%;
+  }
+}
